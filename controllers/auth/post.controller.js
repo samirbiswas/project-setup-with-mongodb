@@ -8,10 +8,13 @@ const User = require('../../models/user')
 
 exports.login = async (req,res)=>{
     try {
-        const user = await User.find();
+      
+       const { phone, password } = req.body;
+       console.log( req.body );
+
         return res.json({
             status: true,
-            user
+    
           });
     } catch (error) {
         console.log('Error from login api',error);
