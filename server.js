@@ -5,12 +5,14 @@ const app = require('./app')
 
 const PORT = 8000;
 
+// test
   app.get('/api', (req, res) => {
     res.status(200).json({
       status: true,
+      message:"hello"
     });
   });
-
+// database conncetion
 mongoose.connect(config.dbUrl, dbOptions, (err) => {
     if (err) return console.log("Failed to connect database",err);
     console.log('database connected');
