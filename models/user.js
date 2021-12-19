@@ -4,9 +4,7 @@ const UserSchema = new mongoose.Schema({
     reportPrintLimit: {
         type: Number,
     },
-    shipId: {
-        type: Array,
-    },
+    shipId: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Trip' }],
     roles: {
         type: Array,
     },

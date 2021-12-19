@@ -23,6 +23,7 @@ const TripSchema = new mongoose.Schema({
     tripDate: {
         type: Date,
     },
+    
 
 });
 

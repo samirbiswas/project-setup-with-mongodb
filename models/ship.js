@@ -21,7 +21,8 @@ const ShipSchema = new mongoose.Schema({
     status: {
         type: Boolean,
         default: true
-    }
+    },
+    
 });
 
 const Ship = mongoose.model('Ship', ShipSchema);
